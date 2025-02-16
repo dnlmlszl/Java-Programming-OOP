@@ -9,14 +9,22 @@ public class Person {
         this.name = name;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
     public void printPerson() {
-        System.out.println(this.name + ": " + this.age + "years old");
+        System.out.println(this.name + " - " + this.age + " years old");
     }
     public void growOlder() {
         this.age++;
     }
 
-    public int returnAge() {
-        return this.age;
+    public boolean isOfLegalAge() {
+        return this.age > 18;
     }
 }
