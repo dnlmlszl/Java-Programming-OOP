@@ -5,6 +5,12 @@ public class PeopleMain {
         Person pekka = new Person("Pekka");
         Person antti = new Person("Antti");
 
+        pekka.setHeight(180);
+        pekka.setWeight(86);
+
+        antti.setHeight(175);
+        antti.setWeight(64);
+
         int i = 0;
         while (i < 30) {
             pekka.growOlder();
@@ -13,7 +19,7 @@ public class PeopleMain {
 
         antti.growOlder();
 
-        System.out.println("");
+        System.out.println();
 
         if (antti.isOfLegalAge()) {
             System.out.print("Of legal age: ");
@@ -31,9 +37,12 @@ public class PeopleMain {
             pekka.printPerson();
         }
 
-        System.out.println("");
+        System.out.println();
 
         System.out.println(antti);
         System.out.println(pekka);
+
+        System.out.printf("%s, body mass index is %.2f\n", pekka.getName(), pekka.bodyMassIndex());
+        System.out.printf("%s, body mass index is %.2f\n", antti.getName(), antti.bodyMassIndex());
     }
 }
