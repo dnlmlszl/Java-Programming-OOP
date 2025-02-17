@@ -30,5 +30,10 @@ public class PeopleMain {
             System.out.print("Underage: ");
             pekka.printPerson();
         }
+
+        System.out.println("");
+
+        System.out.println(antti);
+        System.out.println(pekka);
     }
 }

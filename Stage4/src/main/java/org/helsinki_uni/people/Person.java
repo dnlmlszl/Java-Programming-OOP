@@ -27,4 +27,8 @@ public class Person {
     public boolean isOfLegalAge() {
         return this.age > 18;
     }
+
+    public String toString() {
+        return this.name + ", age " + this.age + " years";
+    }
 }
