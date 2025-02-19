@@ -1,21 +1,15 @@
 package org.helsinki_uni.objectsinalist.people;
 
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class PersonMain {
+    private static final Scanner scanner = new Scanner(System.in);
+
     public static void main(String[] args) {
-        ArrayList<Person> people = new ArrayList<>();
+        UserInterface ui = new UserInterface(scanner);
 
-        Person john = new Person("John");
-        Person matthew = new Person("Matthew");
-        Person martin = new Person("Martin");
-        people.add(john);
-        people.add(matthew);
-        people.add(martin);
-
-        for (Person person : people) {
-            System.out.println(person);
-        }
+        ui.start();
     }
 
 }
