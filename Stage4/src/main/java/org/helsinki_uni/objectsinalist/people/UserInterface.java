@@ -17,11 +17,14 @@ public class UserInterface {
             System.out.println("Enter a name, empty will stop: ");
             String name = scanner.nextLine();
 
+            System.out.print("Enter the age of the person " + name + ": ");
+            int age = Integer.parseInt(scanner.nextLine());
+
             if (name.isEmpty()) {
                 break;
             }
 
-            people.add(new Person(name));
+            people.add(new Person(name, age));
         }
 
         System.out.println();

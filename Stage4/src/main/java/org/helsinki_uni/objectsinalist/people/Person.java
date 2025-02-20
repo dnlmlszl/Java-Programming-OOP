@@ -6,9 +6,9 @@ public class Person {
     private int weight;
     private int height;
 
-    public Person(String name) {
+    public Person(String name, int age) {
         this.name = name;
-        this.age = 0;
+        this.age = age;
         this.weight = 0;
         this.height = 0;
     }
