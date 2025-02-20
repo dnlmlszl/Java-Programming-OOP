@@ -14,15 +14,16 @@ public class UserInterface {
 
     public void start() {
         while (true) {
-            System.out.println("Enter a name, empty will stop: ");
-            String name = scanner.nextLine();
+            System.out.println("Enter the details, empty will stop: ");
+            String details = scanner.nextLine();
 
-            System.out.print("Enter the age of the person " + name + ": ");
-            int age = Integer.parseInt(scanner.nextLine());
-
-            if (name.isEmpty()) {
+            if (details.isEmpty()) {
                 break;
             }
+
+            String[] parts = details.split(",");
+            String name = parts[0];
+            int age = Integer.parseInt(parts[1]);
 
             people.add(new Person(name, age));
         }
@@ -31,8 +32,13 @@ public class UserInterface {
         System.out.println("Persons in total: " + people.size());
         System.out.println("Persons: ");
 
+        System.out.println("Select an age limit:");
+        int ageLimit = Integer.parseInt(scanner.nextLine());
+
         for (Person person: people) {
-            System.out.println(person);
+            if (person.getAge() >= ageLimit) {
+                System.out.println(person);
+            }
         }
     }
 
