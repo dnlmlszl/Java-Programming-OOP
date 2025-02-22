@@ -51,6 +51,8 @@
     "Application.ClockMain.executor": "Run",
     "Application.CubeMain.executor": "Run",
     "Application.FitbyteMain.executor": "Run",
+    "Application.PeopleMain.executor": "Run",
+    "Application.ProductMain.executor": "Run",
     "Application.ProgramMain.executor": "Run",
     "Application.RectangleMain.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
