@@ -1,7 +1,7 @@
 package org.helsinki_uni.objectsasparameter.healthstation;
 
 public class Person {
-    private String name;
+    private final String name;
     private int age;
     private int height;
     private int weight;
@@ -12,10 +12,14 @@ public class Person {
 
     // Constructor overloading
     public Person(String name, int age) {
+        this(name, age, 0, 0);
+    }
+
+    public Person(String name, int age, int height, int weight) {
         this.name = name;
         this.age = age;
-        this.weight = 0;
-        this.height = 0;
+        this.height = height;
+        this.weight = weight;
     }
 
     public void printPerson() {
