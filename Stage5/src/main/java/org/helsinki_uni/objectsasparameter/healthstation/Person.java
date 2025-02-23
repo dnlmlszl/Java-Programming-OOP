@@ -1,4 +1,4 @@
-package org.helsinki_uni.removerepetitivecode.people;
+package org.helsinki_uni.objectsasparameter.healthstation;
 
 public class Person {
     private String name;
@@ -6,15 +6,6 @@ public class Person {
     private int height;
     private int weight;
 
-    // V01
-//    public Person(String name) {
-//        this.name = name;
-//        this.age = 0;
-//        this.weight = 0;
-//        this.height = 0;
-//    }
-
-    // V02
     public Person(String name) {
         this(name, 0);
     }
@@ -26,7 +17,6 @@ public class Person {
         this.weight = 0;
         this.height = 0;
     }
-
 
     public void printPerson() {
         System.out.println(this.name + " is " + this.age + " years old");

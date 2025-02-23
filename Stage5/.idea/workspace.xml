@@ -48,7 +48,9 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.APRMain.executor": "Run",
     "Application.ClockMain.executor": "Run",
+    "Application.CounterMain.executor": "Run",
     "Application.CubeMain.executor": "Run",
     "Application.FitbyteMain.executor": "Run",
     "Application.PeopleMain.executor": "Run",
