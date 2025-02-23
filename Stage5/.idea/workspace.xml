@@ -54,6 +54,7 @@
     "Application.CubeMain.executor": "Run",
     "Application.FitbyteMain.executor": "Run",
     "Application.HealthStationMain.executor": "Run",
+    "Application.MainProgram.executor": "Run",
     "Application.PeopleMain.executor": "Run",
     "Application.ProductMain.executor": "Run",
     "Application.ProgramMain.executor": "Run",
