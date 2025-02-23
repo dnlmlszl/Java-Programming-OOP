@@ -11,8 +11,12 @@ public class MainProgram {
 
         boolean wasSuccessful = unicafeExactum.eatHeartily(annesCard);
         System.out.println("There was enough money: " + wasSuccessful);
+
+        unicafeExactum.addMoneyToCard(annesCard, 100);
+
         wasSuccessful = unicafeExactum.eatHeartily(annesCard);
         System.out.println("There was enough money: " + wasSuccessful);
+
         wasSuccessful = unicafeExactum.eatAffordably(annesCard);
         System.out.println("There was enough money: " + wasSuccessful);
 
